@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css is awsome</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        main {
+            width: 100%;
+            height: 100vh;
+            background-color: #ff9cb8;
+            position: relative;
+            overflow: hidden;
+
+            >h2 {
+                position: absolute;
+                font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%)scale(2000);
+                font-size: 50px;
+                animation-timing-function: ease-out;
+                animation: txt1 infinite, txt2 infinite, txt3 infinite;
+
+
+
+                &:nth-of-type(1) {
+                    color: rgb(217, 152, 255);
+                    animation: txt1 9s infinite;
+                    animation-delay: 6s;
+                }
+
+                &:nth-of-type(2) {
+                    color: rgb(253, 129, 179);
+                    animation: txt2 9s infinite;
+                    animation-delay: 3s;
+
+                }
+
+                &:nth-of-type(3) {
+                    color: rgb(254, 79, 149);
+                    animation: txt3 9s infinite;
+
+
+                }
+
+
+            }
+        }
+
+        @keyframes txt1 {
+            0% {
+                transform: translate(-50%, -50%)scale(200);
+                opacity: 1;
+            }
+
+            30% {
+                transform: translate(-50%, -50%)scale(2);
+                opacity: 1;
+            }
+
+            40% {
+                transform: translate(-50%, -50%)scale(1);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translate(-50%, -50%)scale(0);
+                opacity: 0;
+
+            }
+        }
+
+        @keyframes txt2 {
+            0% {
+                transform: translate(-50%, -50%)scale(200);
+                opacity: 1;
+            }
+
+            30% {
+                transform: translate(-50%, -50%)scale(2);
+                opacity: 1;
+            }
+
+            40% {
+                transform: translate(-50%, -50%)scale(1);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translate(-50%, -50%)scale(0);
+                opacity: 0;
+
+            }
+        }
+
+        @keyframes txt3 {
+            0% {
+                transform: translate(-50%, -50%)scale(200);
+                opacity: 1;
+            }
+
+            30% {
+                transform: translate(-50%, -50%)scale(2);
+                opacity: 1;
+            }
+
+            40% {
+                transform: translate(-50%, -50%)scale(1);
+                opacity: 0;
+            }
+
+            100% {
+                transform: translate(-50%, -50%)scale(0);
+                opacity: 0;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h2>AWESOME</h2>
+        <h2>IS</h2>
+        <h2>CSS</h2>
+
+    </main>
+</body>
+
+</html>
